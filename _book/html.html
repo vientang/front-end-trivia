@@ -94,7 +94,7 @@
                 <a href="./">
             
                     
-                    Introduction
+                    Front End Interview Questions
             
                 </a>
             
@@ -121,6 +121,58 @@
             
                     
                     CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                    Network
             
                 </a>
             
@@ -174,8 +226,38 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="html-questions">HTML Questions</h1>
-<p>What does a doctype do? 
-The doctype declaration is an instruction to the web browser about what version of the markup language the page is written in. It should be the very first thing in an HTML document, before the HTML tag. While it may look like it, is not an HTML tag.</p>
+<h4 id="what-does-a-doctype-do">What does a doctype do?</h4>
+<p>The doctype declaration is an instruction to the web browser about what version of the markup language the page is written in. It should be the very first thing in an HTML document, before the HTML tag. While it may look like it, is not an HTML tag.</p>
+<h4 id="whats-the-difference-between-html-and-xhtml">What&apos;s the difference between HTML and XHTML?</h4>
+<p>XHTML is HTML with a stricter markup. It provides more precise standards and specifications for how a site&#x2019;s data is broken down and transmitted and therefore solved some cross-browser compatibility issues. Then HTML5 came along and pretty much squashed XHTML.</p>
+<p>As <a href="http://stackoverflow.com/users/987/will-dean" target="_blank">Will Dean</a> on Stack Overflow put:</p>
+<blockquote>
+<p>At one time, people hoped that the solution to the mess of the late 90s web markup was to persuade everyone to write XHTML rather than HTML, perhaps in the hope that the enforced discipline would transform all those polo-necked frameless-spectacle wearing graphic designers into computer programmers. Alas, there was not actually much demonstrable benefit to all this exhausting prostration at the altar of the XHTML validator, so XHTML is now out of fashion and HTML is back in.</p>
+</blockquote>
+<h4 id="how-do-you-serve-a-page-with-content-in-multiple-languages">How do you serve a page with content in multiple languages?</h4>
+<p>The HTTP Content-Language header can be used to provide metadata about the intended audience of the page. Set your server to send the information in the HTTP Content-Language header as <code>Content-Language: en, hi, pa</code>. Also, it&apos;s good practice use a language attribute on the html tag to declare the default language of the actual text in the page - for example: <code>&lt;html lang=&quot;en&quot;&gt;</code> is intended for English readers.</p>
+<h4 id="what-kind-of-things-must-you-be-wary-of-when-design-or-developing-for-multilingual-sites">What kind of things must you be wary of when design or developing for multilingual sites?</h4>
+<p>Things to think about for internationalization: How users be directed to their language (e.g IP-based re-routing, UI, urls), colors, restrictive character counts, text in images might not scale properly, etc.</p>
+<h4 id="whats-the-data-attribute-used-for">What&#x2019;s the data attribute used for?</h4>
+<p>Out of the box, there are a gang full of HTML5 attributes at your disposal. See the full list <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">here</a>. If you need an attribute that isn&#x2019;t on that list, slap on a data-whatever-you-want and you&#x2019;ll have your own custom attribute. Here&#x2019;s an example from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes" target="_blank">MDN</a>:</p>
+<pre><code>&lt;article
+  id=&quot;electriccars&quot;
+  data-columns=&quot;3&quot;
+  data-index-number=&quot;12314&quot;
+  data-parent=&quot;cars&quot;
+  data-role=&quot;web&quot;&gt;
+...
+&lt;/article&gt;
+</code></pre><p>This is helpful when we want to search or filter an element by the data type using their values, or for styling, or for performance by assigning values in the markup that doesn&apos;t need to come from the server. </p>
+<h4 id="describe-the-difference-between-a-cookie-sessionstorage-and-localstorage-different-types-of-storage-on-the-client-side">Describe the difference between a cookie, sessionStorage and localStorage. Different types of storage on the client side.</h4>
+<p><strong>Cookies</strong> - Small pieces of data that is stored in key-value pairs that lets a site keep track of your movements within the site. It typically comes with an expiration time. <strong>sessionStorage</strong> - Data that is persisted and scoped to the current window or tab. If your window or tab is closed, the data is gone. <strong>localStorage</strong> - Data that is persisted and scoped to a domain by key-value pairs. localStorage data is stored in the users browser in their computer. </p>
+<p>Benefits of using client-side storage. </p>
+<ol>
+<li>Your app can work when the user is offline and maybe sync data when they&apos;re back online. </li>
+<li>It&apos;s a performance booster. You can show a large amount of data as soon as the user clicks on to your site because the data was cached locally - instead of waiting for stuff to download again. </li>
+<li>No server required. Easy peasy.</li>
+</ol>
+<p><em>Note: localStorage should be used for non-critical data, like data you&apos;d store in a cache, not an actual database</em></p>
 
                                 
                                 </section>
@@ -203,7 +285,7 @@ The doctype declaration is an instruction to the web browser about what version 
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Front End Interview Questions">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -219,7 +301,7 @@ The doctype declaration is an instruction to the web browser about what version 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.2","depth":1,"next":{"title":"CSS","level":"1.3","depth":1,"path":"css.md","ref":"css.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"html.md","mtime":"2017-03-11T04:45:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T04:57:57.673Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.2","depth":1,"next":{"title":"CSS","level":"1.3","depth":1,"path":"css.md","ref":"css.md","articles":[]},"previous":{"title":"Front End Interview Questions","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"html.md","mtime":"2017-03-11T07:05:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T07:08:58.325Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
