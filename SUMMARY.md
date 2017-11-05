@@ -5,6 +5,7 @@
 * [Javascript](javascript.md)
 * [CSS](css.md)
 * [HTML](html.md)
+* [Debugging](debugging.md)
 * [Testing](testing.md)
 * [Performance](performance.md)
 * [Network](network.md)
