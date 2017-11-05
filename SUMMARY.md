@@ -1,6 +1,6 @@
 # Summary
 
-* [Front End Interview Questions](README.md)
+* [Front End Tips and Tricks](README.md)
 * [React](react.md)
 * [Javascript](javascript.md)
 * [CSS](css.md)
