@@ -9,3 +9,6 @@ This is a web based book about the tips and tricks I've discovered in Front End 
 2. React
 3. CSS
 4. HTML
+5. Testing
+6. Network
+7. Performance

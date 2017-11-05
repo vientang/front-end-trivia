@@ -1,4 +1,4 @@
-#CSS Questions
+#CSS
 
 ####What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why? 
 **Resetting** - Removing all styling from every element - margins, padding, etc. All elements will have the same font-size, same line-height and no spacing. Eric Meyer's Reset is the most common approach. 
